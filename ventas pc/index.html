@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Piezas de Computador</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/logg.png" type="image/png">
+
+
+  <style>
+body {body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+  
+}
+
+    header {
+      background: #275fc74d;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+    .contenedor {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .producto {
+      background: #60699b;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      padding: 15px;
+      text-align: center;
+    }
+    .producto img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .producto h3 {
+      margin: 10px 0;
+    }
+    .producto button {
+      background: #28a745;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .producto button:hover {
+      background: #218838;
+    }
+    #carrito {
+      background: #f8f8f8ef;
+      padding: 15px;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgb(255, 255, 255);
+    }
+  </style>
+</head>
+<body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Repuestos Fernando</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+  
+      header {
+        background-color: #16376e;
+        color: white;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+  
+      .Encabezado {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+  
+      .logo {
+        height: 60px;
+      }
+  
+      .Encabezado h1 {
+        margin: 0;
+        font-size: 24px;
+        text-transform: uppercase;
+      }
+  
+      .Encabezado p {
+        margin: 0;
+        font-size: 14px;
+      }
+  
+      .menu a {
+        background-color: #3b5eff;
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+  
+      .menu a:hover {
+        background-color: #294dcc;
+      }
+    </style>
+  </head>
+  <body>
+  
+  <header>
+    <div class="Encabezado">
+      <img src="img/logg.png" alt="Logo de la empresa" class="logo">
+      <div>
+        <h1>Repuestos Fernando</h1>
+        <p>Esto es lo que tenemos disponible por ahora</p>
+      </div>
+    </div>
+  
+    <div class="menu">
+      <a href="#carrito">Contacto</a>
+    </div>
+  </header>
+  
+  </body>
+
+
+  <section class="contenedor">
+    <div class="producto">
+      <img src="img/mmm.webp" alt="Tarjeta Gráfica">
+      <h3>Tarjeta Gráfica RTX 3060</h3>
+      <p>L 19,578</p>
+      <button onclick="agregarAlCarrito('RTX 3060', 19578)">Agregar al carrito</button>
+    </div>
+    <div class="producto">
+      <img src="img/nnn.webp" alt="Procesador">
+      <h3>Procesador AMD Ryzen 5 5600X</h3>
+      <p>L 3,666.39</p>
+      <button onclick="agregarAlCarrito('Ryzen 5 5600X', 3666.39)">Agregar al carrito</button>
+    </div>
+    <div class="producto">
+      <img src="img/nn.webp" alt="Memoria RAM">
+      <h3>Memoria RAM 16GB DDR4</h3>
+      <p>L 2,900.00</p>
+      <button onclick="agregarAlCarrito('RAM 16GB DDR4', 2900.00)">Agregar al carrito</button>
+    </div>           
+    <div class="producto">
+        <img src="img/descargar.webp" alt="asrock h610m-hdv | m.2 ddr4">
+        <h3>asrock h610m-hdv | m.2 ddr4</h3>
+        <p>L 2,750.00</p>
+        <button onclick="agregarAlCarrito('asrock h610m-hdv | m.2 ddr4', 2750.00)">Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="img/IME-90600.webp" alt="Fuente De Poder Imexx Atx 600 Watts 24 Pin Sata">
+        <h3>Fuente De Poder Imexx Atx 600 Watts 24 Pin Sata</h3>
+        <p>L 555.00</p>
+        <button onclick="agregarAlCarrito('Fuente De Poder Imexx Atx 600 Watts 24 Pin Sata', 555.00)">Agregar al carrito</button>
+      </div>
+      <div class="producto">  
+        <img src="img/descargar (1).webp" alt="Corsair Ironclaw RGB">
+        <h3>Corsair Ironclaw RGB
+
+        </h3>
+        <p>L 1,800</p>
+        <button onclick="agregarAlCarrito('Corsair Ironclaw RGB', 1800)">Agregar al carrito</button>
+      </div>
+<div class="producto">
+        <img src="img/teca.jpg" alt="Teclado Usb En Ingles Multimedia Negro Xtech Xtk-130e">
+        <h3>Teclado Usb En Ingles Multimedia Negro Xtech Xtk-130e</h3>
+        <p>L 229.00</p>
+        <button onclick="agregarAlCarrito('Teclado Usb En Ingles Multimedia Negro Xtech Xtk-130e', 229.00)">Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="img/ssd.webp" alt="Disco Duro Ssd 2.5 512Gb Sata E100 Hiksemi">
+        <h3>Disco Duro Ssd 2.5 512Gb Sata E100 Hiksemi</h3>
+        <p>L 1,104.60</p>
+        <button onclick="agregarAlCarrito('Disco Duro Ssd 2.5 512Gb Sata E100 Hiksemi', 1104.60)">Agregar al carrito</button>
+      </div>
+
+
+  </section>
+  
+
+
+
+
+
+
+  <section id="carrito">
+    <h2>Carrito de Compras</h2>
+    <ul id="lista-carrito"></ul>
+    <h3>Total: L<span id="total">0</span></h3>
+  </section>
+<p></p>
+<footer class="site-footer">
+  <div class="footer-background">
+    <img src="itachi-removebg-preview.png" alt="Stitch fondo" class="footer-banner">
+  </div>
+  
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>RESPUESTOS FERNANDO</h3>
+      <ul>
+        <li><a href="#">¿Quiénes Somos?</a></li>
+        <li><a href="#">Contáctanos</a></li>
+        <li><a href="#">Empleo</a></li>
+        <li><a href="#">Sucursales</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Páginas</h3>
+      <ul>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#">Gaming</a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Servicios</h3>
+      <ul>
+        <li><a href="#">Formulario de Diseño</a></li>
+        <li><a href="#">Servicio Técnico</a></li>
+        <li><a href="#">Solicitar Cotización</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Políticas</h3>
+      <ul>
+        <li><a href="#">Política de Garantías</a></li>
+        <li><a href="#">Política de Privacidad</a></li>
+
+        <div class="footer-column">
+          <h3>Nuestras Redes</h3>
+          <a href="https://www.facebook.com/profile.php?id=61580213570339&mibextid=ZbWKwL" target="_blank">
+            <img src="img/face.jpg" alt="Facebook" class="social-icon">
+          </a>
+          <a href="https://www.instagram.com/repuestos_fernando?igsh=MXh3a3BkdHpkOGltbg==" target="_blank">
+            <img src="img/ig.jpg" alt="Instagram" class="social-icon">
+          </a>
+          <a href="https://www.tiktok.com/@repuestos.fernand6?_t=ZM-8zLfS3aTZ49&_r=1" target="_blank">
+            <img src="img/tik tok.png" alt="Tik Tok" class="social-icon">
+          </a>
+          <a href="https://x.com/Repuestosfer?t=cM-d0E_vmNNQvkeTDtUIaw&s=08" target="_blank">
+            <img src="img/x.png" alt="X" class="social-icon">
+      </ul>
+    </div>
+  </div>
+
+  <img src="stitch-png.png" alt="Stitch" class="stitch-personaje">
+  
+</footer>
+
+
+      </span>
+    </div>
+  </section>
+  
+  
+  <script>
+    let total = 0;
+    let carrito = [];
+
+    function agregarAlCarrito(nombre, precio) {
+      carrito.push({ nombre, precio });
+      total += precio;
+      actualizarCarrito();
+    }
+
+    function actualizarCarrito() {
+      const lista = document.getElementById('lista-carrito');
+      lista.innerHTML = '';
+      carrito.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = `${item.nombre} - L${item.precio}`;
+        lista.appendChild(li);
+      });
+      document.getElementById('total').textContent = total;
+      
+      
+    }
+    
+  </script>
+  
+</body>
+</html>
